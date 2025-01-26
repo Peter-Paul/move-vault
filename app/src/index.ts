@@ -142,19 +142,19 @@ async function getBalance(vaultAddress: string, coinType: string) {
 
 const coinType = "0x1::aptos_coin::AptosCoin"; // Replace with your coin type
 
-// Step 1: Create a vault
+// Create a vault
 createVault(account, coinType);
 
-// Step 2: Deposit coins (replace `amount` with a valid value)
+// Deposit coins (replace `amount` with a valid value)
 const depositAmount = 100; // Example: Deposit 100 coins
 deposit(account, accountAddress, coinType, depositAmount);
 
-// Step 3: Check vault balance
+// Check vault balance
 getBalance(accountAddress, coinType);
 
-// Step 4: Withdraw coins (replace `withdrawAmount` with a valid value)
+// Withdraw coins (replace `withdrawAmount` with a valid value)
 const withdrawAmount = 50; // Example: Withdraw 50 coins
 remove(account, accountAddress, coinType, withdrawAmount);
 
-// Step 5: Check vault balance again
+// Check vault balance again
 getBalance(accountAddress, coinType);
